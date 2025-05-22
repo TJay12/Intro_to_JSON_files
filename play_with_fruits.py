@@ -32,4 +32,3 @@ def add_fruit():
 
     print(f"{new_fruit} added")
 
-add_fruit()

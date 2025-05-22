@@ -30,5 +30,3 @@ def add_animal():
     save_json("animals.json", animals)
 
     print(f"{new_animal} added")
-
-add_animal()
