@@ -1,0 +1,10 @@
+{
+    "carrot": {
+        "color": "orange",
+        "price": 0.2
+    },
+    "lettuce": {
+        "color": "green",
+        "price": 0.5
+    }
+}

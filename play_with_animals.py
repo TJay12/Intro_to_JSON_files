@@ -1,6 +1,6 @@
-from data_loader import load_json, save_json
+from data_loader import load_json_basic, save_json_basic
 
-animals = load_json("animals.json")
+animals = load_json_basic("animals.json")
 
 print(f"\nFour legged friends!")
 for animal, info in animals.items():
@@ -12,7 +12,7 @@ for animal, info in animals.items():
     print(f"A {animal} goes '{info['sound']}'")
 
 def add_animal():
-    animals = load_json("animals.json")
+    animals = load_json_basic("animals.json")
 
     new_animal = input("Animal: ").lower()
     animal_sound = input("Animal Sound: ").lower()
@@ -34,6 +34,6 @@ def add_animal():
 
     animals.update(add_new_animal)
 
-    save_json("animals.json", animals)
+    save_json_basic("animals.json", animals)
 
     print(f"{new_animal} added")

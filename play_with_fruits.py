@@ -1,6 +1,6 @@
-from data_loader import load_json, save_json
+from data_loader import save_json_basic, load_json_basic
 
-fruits = load_json("fruits.json")
+fruits = load_json_basic("fruits.json")
 
 for fruit, info in fruits.items():
     print(f"{fruit.title()} is {info['color']} and costs ${info['price']}")
@@ -13,7 +13,7 @@ for fruit, info in fruits.items():
 print(f"{'*' * 18}")
 
 def add_fruit():
-    fruits = load_json("fruits.json")
+    fruits = load_json_basic("fruits.json")
 
     new_fruit = input("Fruit: ").lower()
     fruit_color = input("Fruit Color: ").lower()
@@ -35,7 +35,7 @@ def add_fruit():
 
     fruits.update(add_new_fruit)
 
-    save_json("fruits.json", fruits)
+    save_json_basic("fruits.json", fruits)
 
     print(f"{new_fruit} added")
 
