@@ -1,0 +1,16 @@
+{
+    "name": "TJ the Brave",
+    "level": 3,
+    "total exp": 80,
+    "next level": 76.8,
+    "class": "Wizard",
+    "inventory": [
+        "wand",
+        "cloak",
+        "mana potion"
+    ],
+    "location": {
+        "x": 10,
+        "y": 42
+    }
+}
