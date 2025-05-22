@@ -1,10 +1,14 @@
 {
-  "dog": {
-    "sound": "bark",
-    "legs": 4
-  },
-  "cat": {
-    "sound": "meow",
-    "legs": 4
-  }
+    "dog": {
+        "sound": "bark",
+        "legs": 4
+    },
+    "cat": {
+        "sound": "meow",
+        "legs": 4
+    },
+    "chicken": {
+        "sound": "cluck-cluck",
+        "legs": 2
+    }
 }
