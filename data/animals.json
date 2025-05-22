@@ -1,0 +1,10 @@
+{
+  "dog": {
+    "sound": "bark",
+    "legs": 4
+  },
+  "cat": {
+    "sound": "meow",
+    "legs": 4
+  }
+}
