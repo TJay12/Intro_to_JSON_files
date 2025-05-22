@@ -15,9 +15,16 @@ print(f"{'*' * 18}")
 def add_fruit():
     fruits = load_json("fruits.json")
 
-    new_fruit = input("Fruit: ")
-    fruit_color = input("Fruit Color: ")
-    fruit_price = float(input("Fruit Price: "))
+    new_fruit = input("Fruit: ").lower()
+    fruit_color = input("Fruit Color: ").lower()
+    try:
+        fruit_price = float(input("Fruit Price: "))
+    except ValueError:
+        print("Price must be a number")
+        return
+
+    if new_fruit in fruits:
+        print(f"{new_fruit} already exists. Overwriting")
 
     add_new_fruit = {
         new_fruit: {

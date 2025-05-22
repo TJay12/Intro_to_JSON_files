@@ -14,9 +14,16 @@ for animal, info in animals.items():
 def add_animal():
     animals = load_json("animals.json")
 
-    new_animal = input("Animal: ")
-    animal_sound = input("Animal Sound: ")
-    animal_legs = int(input("Animal Legs: "))
+    new_animal = input("Animal: ").lower()
+    animal_sound = input("Animal Sound: ").lower()
+    try:
+        animal_legs = int(input("Animal Legs: "))
+    except ValueError:
+        print("Price must be a number")
+        return
+
+    if new_animal in animals:
+        print(f"{new_animal} already exists. Overwriting")
 
     add_new_animal = {
         new_animal: {
